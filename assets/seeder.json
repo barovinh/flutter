@@ -1,0 +1,541 @@
+{
+  "issues": [
+    {
+      "id": 1,
+      "number": 101,
+      "title": "Fix login screen crash on Android 12",
+      "body": "App crashes when user tries to login on Android 12 devices. Stack trace attached below.",
+      "state": "open",
+      "userName": "barovinh",
+      "userAvatar": "https://avatars.githubusercontent.com/u/112720108?v=4",
+      "labels": [
+        { "name": "bug", "color": "#d73a4a" },
+        { "name": "priority: high", "color": "#e4e669" }
+      ],
+      "commentsCount": 5,
+      "assignees": ["barovinh"],
+      "milestone": "v1.0.0",
+      "createdAt": "2024-08-01T08:30:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 2,
+      "number": 102,
+      "title": "Add dark mode support",
+      "body": "Users have requested a dark mode option in the settings page.",
+      "state": "open",
+      "userName": "nguyenvana",
+      "userAvatar": "https://avatars.githubusercontent.com/u/1?v=4",
+      "labels": [
+        { "name": "enhancement", "color": "#a2eeef" },
+        { "name": "UI", "color": "#7057ff" }
+      ],
+      "commentsCount": 12,
+      "assignees": ["barovinh", "tranthib"],
+      "milestone": "v1.1.0",
+      "createdAt": "2024-08-03T10:15:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 3,
+      "number": 103,
+      "title": "Profile avatar not loading from network",
+      "body": "When user has slow connection, avatar shows broken image icon instead of placeholder.",
+      "state": "closed",
+      "userName": "tranthib",
+      "userAvatar": "https://avatars.githubusercontent.com/u/2?v=4",
+      "labels": [
+        { "name": "bug", "color": "#d73a4a" }
+      ],
+      "commentsCount": 3,
+      "assignees": ["barovinh"],
+      "milestone": "v1.0.0",
+      "createdAt": "2024-07-28T14:00:00Z",
+      "closedAt": "2024-08-05T09:00:00Z"
+    },
+    {
+      "id": 4,
+      "number": 104,
+      "title": "Implement task filtering by label",
+      "body": "Users should be able to filter tasks by label (bug, enhancement, etc.) on the task list screen.",
+      "state": "in_progress",
+      "userName": "barovinh",
+      "userAvatar": "https://avatars.githubusercontent.com/u/112720108?v=4",
+      "labels": [
+        { "name": "enhancement", "color": "#a2eeef" },
+        { "name": "feature", "color": "#0075ca" }
+      ],
+      "commentsCount": 7,
+      "assignees": ["barovinh"],
+      "milestone": "v1.2.0",
+      "createdAt": "2024-08-07T09:00:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 5,
+      "number": 105,
+      "title": "Tab bar not scrollable on small screens",
+      "body": "On screens smaller than 360px width, the tab bar overflows and is not scrollable.",
+      "state": "closed",
+      "userName": "lehongc",
+      "userAvatar": "https://avatars.githubusercontent.com/u/3?v=4",
+      "labels": [
+        { "name": "bug", "color": "#d73a4a" },
+        { "name": "UI", "color": "#7057ff" }
+      ],
+      "commentsCount": 2,
+      "assignees": ["barovinh"],
+      "milestone": "v1.0.0",
+      "createdAt": "2024-07-25T11:30:00Z",
+      "closedAt": "2024-07-30T16:00:00Z"
+    },
+    {
+      "id": 6,
+      "number": 106,
+      "title": "Add pull-to-refresh on issue list",
+      "body": "Issue list should support pull-to-refresh gesture to reload latest data from API.",
+      "state": "open",
+      "userName": "barovinh",
+      "userAvatar": "https://avatars.githubusercontent.com/u/112720108?v=4",
+      "labels": [
+        { "name": "enhancement", "color": "#a2eeef" }
+      ],
+      "commentsCount": 1,
+      "assignees": [],
+      "milestone": null,
+      "createdAt": "2024-08-10T13:45:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 7,
+      "number": 107,
+      "title": "SnackBar overlaps bottom navigation on iOS",
+      "body": "On iOS devices with home indicator, SnackBar is partially hidden behind the gesture bar.",
+      "state": "open",
+      "userName": "nguyenvana",
+      "userAvatar": "https://avatars.githubusercontent.com/u/1?v=4",
+      "labels": [
+        { "name": "bug", "color": "#d73a4a" },
+        { "name": "iOS", "color": "#e4e669" }
+      ],
+      "commentsCount": 4,
+      "assignees": ["tranthib"],
+      "milestone": "v1.0.1",
+      "createdAt": "2024-08-09T07:20:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 8,
+      "number": 108,
+      "title": "Write unit tests for Issue model",
+      "body": "Need to add unit tests for Issue model parsing, especially for null safety checks.",
+      "state": "open",
+      "userName": "tranthib",
+      "userAvatar": "https://avatars.githubusercontent.com/u/2?v=4",
+      "labels": [
+        { "name": "testing", "color": "#0e8a16" },
+        { "name": "good first issue", "color": "#7057ff" }
+      ],
+      "commentsCount": 0,
+      "assignees": [],
+      "milestone": "v1.1.0",
+      "createdAt": "2024-08-11T15:00:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 9,
+      "number": 109,
+      "title": "Optimize image caching for avatar",
+      "body": "Avatar images are being redownloaded on every rebuild. Should use cached_network_image package.",
+      "state": "closed",
+      "userName": "barovinh",
+      "userAvatar": "https://avatars.githubusercontent.com/u/112720108?v=4",
+      "labels": [
+        { "name": "performance", "color": "#f9d0c4" }
+      ],
+      "commentsCount": 6,
+      "assignees": ["barovinh"],
+      "milestone": "v1.0.0",
+      "createdAt": "2024-07-20T10:00:00Z",
+      "closedAt": "2024-08-01T12:30:00Z"
+    },
+    {
+      "id": 10,
+      "number": 110,
+      "title": "Localization support (EN/VI)",
+      "body": "App should support both English and Vietnamese languages. Need to set up flutter_localizations.",
+      "state": "open",
+      "userName": "lehongc",
+      "userAvatar": "https://avatars.githubusercontent.com/u/3?v=4",
+      "labels": [
+        { "name": "enhancement", "color": "#a2eeef" },
+        { "name": "i18n", "color": "#0075ca" }
+      ],
+      "commentsCount": 9,
+      "assignees": ["barovinh", "nguyenvana"],
+      "milestone": "v1.2.0",
+      "createdAt": "2024-08-12T08:00:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 11,
+      "number": 111,
+      "title": "Add empty state for task list when no tasks exist",
+      "body": "When the task list is empty, users should see a friendly empty state with a button to add their first task.",
+      "state": "open",
+      "userName": "barovinh",
+      "userAvatar": "https://avatars.githubusercontent.com/u/112720108?v=4",
+      "labels": [
+        { "name": "enhancement", "color": "#a2eeef" },
+        { "name": "UI", "color": "#7057ff" }
+      ],
+      "commentsCount": 3,
+      "assignees": ["barovinh"],
+      "milestone": "v1.3.0",
+      "createdAt": "2024-08-13T09:10:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 12,
+      "number": 112,
+      "title": "Improve task creation form validation",
+      "body": "The task creation form should validate required fields and prevent submission with empty titles or invalid dates.",
+      "state": "in_progress",
+      "userName": "nguyenvana",
+      "userAvatar": "https://avatars.githubusercontent.com/u/1?v=4",
+      "labels": [
+        { "name": "bug", "color": "#d73a4a" },
+        { "name": "feature", "color": "#0075ca" }
+      ],
+      "commentsCount": 5,
+      "assignees": ["nguyenvana"],
+      "milestone": "v1.2.1",
+      "createdAt": "2024-08-14T11:00:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 13,
+      "number": 113,
+      "title": "Add analytics for completed tasks per week",
+      "body": "Users want to see trend charts for task completion rate across the last 7 days and 30 days.",
+      "state": "open",
+      "userName": "tranthib",
+      "userAvatar": "https://avatars.githubusercontent.com/u/2?v=4",
+      "labels": [
+        { "name": "enhancement", "color": "#a2eeef" },
+        { "name": "performance", "color": "#f9d0c4" }
+      ],
+      "commentsCount": 2,
+      "assignees": ["tranthib"],
+      "milestone": "v1.4.0",
+      "createdAt": "2024-08-14T14:35:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 14,
+      "number": 114,
+      "title": "Fix duplicate task insertion on rapid double tap",
+      "body": "Rapid tapping on submit can create multiple identical tasks due to missing debounce in the form action.",
+      "state": "open",
+      "userName": "lehongc",
+      "userAvatar": "https://avatars.githubusercontent.com/u/3?v=4",
+      "labels": [
+        { "name": "bug", "color": "#d73a4a" },
+        { "name": "priority: high", "color": "#e4e669" }
+      ],
+      "commentsCount": 8,
+      "assignees": ["barovinh", "lehongc"],
+      "milestone": "v1.2.1",
+      "createdAt": "2024-08-15T08:20:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 15,
+      "number": 115,
+      "title": "Add drag-and-drop to reorder tasks",
+      "body": "Users want to reorder tasks manually in the list using drag and drop interactions.",
+      "state": "open",
+      "userName": "barovinh",
+      "userAvatar": "https://avatars.githubusercontent.com/u/112720108?v=4",
+      "labels": [
+        { "name": "feature", "color": "#0075ca" },
+        { "name": "UI", "color": "#7057ff" }
+      ],
+      "commentsCount": 4,
+      "assignees": ["tranthib"],
+      "milestone": "v1.3.0",
+      "createdAt": "2024-08-15T10:15:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 16,
+      "number": 116,
+      "title": "Improve onboarding screen for first-time users",
+      "body": "New users should see a short setup flow explaining how to create and complete tasks.",
+      "state": "resolved",
+      "userName": "nguyenvana",
+      "userAvatar": "https://avatars.githubusercontent.com/u/1?v=4",
+      "labels": [
+        { "name": "enhancement", "color": "#a2eeef" },
+        { "name": "good first issue", "color": "#7057ff" }
+      ],
+      "commentsCount": 1,
+      "assignees": [],
+      "milestone": "v1.1.0",
+      "createdAt": "2024-08-16T09:45:00Z",
+      "closedAt": "2024-08-18T12:00:00Z"
+    },
+    {
+      "id": 17,
+      "number": 117,
+      "title": "Support swipe actions to complete or delete tasks",
+      "body": "Add swipe left/right actions on task cards for quick completion and delete flows.",
+      "state": "open",
+      "userName": "lehongc",
+      "userAvatar": "https://avatars.githubusercontent.com/u/3?v=4",
+      "labels": [
+        { "name": "feature", "color": "#0075ca" },
+        { "name": "mobile", "color": "#0e8a16" }
+      ],
+      "commentsCount": 6,
+      "assignees": ["lehongc", "barovinh"],
+      "milestone": "v1.3.1",
+      "createdAt": "2024-08-16T12:10:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 18,
+      "number": 118,
+      "title": "Add search box to filter tasks by title",
+      "body": "Users want to instantly search tasks by keyword without navigating between views.",
+      "state": "in_progress",
+      "userName": "barovinh",
+      "userAvatar": "https://avatars.githubusercontent.com/u/112720108?v=4",
+      "labels": [
+        { "name": "enhancement", "color": "#a2eeef" },
+        { "name": "feature", "color": "#0075ca" }
+      ],
+      "commentsCount": 7,
+      "assignees": ["barovinh"],
+      "milestone": "v1.3.0",
+      "createdAt": "2024-08-17T07:30:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 19,
+      "number": 119,
+      "title": "Fix theme flicker on app startup",
+      "body": "The app briefly shows light mode before applying the saved dark mode preference on launch.",
+      "state": "open",
+      "userName": "tranthib",
+      "userAvatar": "https://avatars.githubusercontent.com/u/2?v=4",
+      "labels": [
+        { "name": "bug", "color": "#d73a4a" },
+        { "name": "UI", "color": "#7057ff" }
+      ],
+      "commentsCount": 4,
+      "assignees": ["tranthib"],
+      "milestone": "v1.2.0",
+      "createdAt": "2024-08-17T09:50:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 20,
+      "number": 120,
+      "title": "Add keyboard shortcuts for common actions",
+      "body": "Desktop users should be able to quickly add tasks, switch filters, and complete items using keyboard shortcuts.",
+      "state": "open",
+      "userName": "nguyenvana",
+      "userAvatar": "https://avatars.githubusercontent.com/u/1?v=4",
+      "labels": [
+        { "name": "enhancement", "color": "#a2eeef" },
+        { "name": "accessibility", "color": "#cfd3d7" }
+      ],
+      "commentsCount": 2,
+      "assignees": [],
+      "milestone": null,
+      "createdAt": "2024-08-17T13:25:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 21,
+      "number": 121,
+      "title": "Add app onboarding checklist for new contributors",
+      "body": "Show a checklist to help first-time contributors understand project setup and common workflows.",
+      "state": "open",
+      "userName": "lehongc",
+      "userAvatar": "https://avatars.githubusercontent.com/u/3?v=4",
+      "labels": [
+        { "name": "documentation", "color": "#bfd4f2" },
+        { "name": "good first issue", "color": "#7057ff" }
+      ],
+      "commentsCount": 3,
+      "assignees": ["lehongc"],
+      "milestone": "v1.4.0",
+      "createdAt": "2024-08-18T08:00:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 22,
+      "number": 122,
+      "title": "Improve date formatting across all regions",
+      "body": "Dates should respect user locale and be displayed in a more readable format on all platforms.",
+      "state": "in_progress",
+      "userName": "barovinh",
+      "userAvatar": "https://avatars.githubusercontent.com/u/112720108?v=4",
+      "labels": [
+        { "name": "bug", "color": "#d73a4a" },
+        { "name": "i18n", "color": "#0075ca" }
+      ],
+      "commentsCount": 5,
+      "assignees": ["barovinh", "nguyenvana"],
+      "milestone": "v1.3.0",
+      "createdAt": "2024-08-18T10:40:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 23,
+      "number": 123,
+      "title": "Add export feature for completed tasks as CSV",
+      "body": "Users should be able to export completed tasks to CSV for reporting and backups.",
+      "state": "open",
+      "userName": "tranthib",
+      "userAvatar": "https://avatars.githubusercontent.com/u/2?v=4",
+      "labels": [
+        { "name": "feature", "color": "#0075ca" },
+        { "name": "enhancement", "color": "#a2eeef" }
+      ],
+      "commentsCount": 2,
+      "assignees": [],
+      "milestone": "v1.4.1",
+      "createdAt": "2024-08-19T09:30:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 24,
+      "number": 124,
+      "title": "Add gesture hint for task completion animation",
+      "body": "Users should see a subtle visual hint when a task can be checked off with a swipe or tap gesture.",
+      "state": "open",
+      "userName": "nguyenvana",
+      "userAvatar": "https://avatars.githubusercontent.com/u/1?v=4",
+      "labels": [
+        { "name": "UI", "color": "#7057ff" },
+        { "name": "enhancement", "color": "#a2eeef" }
+      ],
+      "commentsCount": 1,
+      "assignees": ["nguyenvana"],
+      "milestone": "v1.3.1",
+      "createdAt": "2024-08-19T12:15:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 25,
+      "number": 125,
+      "title": "Create profile page analytics section",
+      "body": "Display user productivity statistics, streaks, and completed task summaries on the profile page.",
+      "state": "open",
+      "userName": "barovinh",
+      "userAvatar": "https://avatars.githubusercontent.com/u/112720108?v=4",
+      "labels": [
+        { "name": "feature", "color": "#0075ca" },
+        { "name": "UI", "color": "#7057ff" }
+      ],
+      "commentsCount": 6,
+      "assignees": ["barovinh", "tranthib"],
+      "milestone": "v1.4.0",
+      "createdAt": "2024-08-20T08:05:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 26,
+      "number": 126,
+      "title": "Add reminder notifications for overdue tasks",
+      "body": "Users should receive reminders when a task remains incomplete past its due date.",
+      "state": "open",
+      "userName": "lehongc",
+      "userAvatar": "https://avatars.githubusercontent.com/u/3?v=4",
+      "labels": [
+        { "name": "enhancement", "color": "#a2eeef" },
+        { "name": "bug", "color": "#d73a4a" }
+      ],
+      "commentsCount": 3,
+      "assignees": ["lehongc"],
+      "milestone": "v1.4.1",
+      "createdAt": "2024-08-20T11:40:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 27,
+      "number": 127,
+      "title": "Improve accessibility contrast for chart labels",
+      "body": "Some chart labels are hard to read in low-contrast themes and need stronger color contrast ratios.",
+      "state": "resolved",
+      "userName": "tranthib",
+      "userAvatar": "https://avatars.githubusercontent.com/u/2?v=4",
+      "labels": [
+        { "name": "accessibility", "color": "#cfd3d7" },
+        { "name": "UI", "color": "#7057ff" }
+      ],
+      "commentsCount": 2,
+      "assignees": ["tranthib"],
+      "milestone": "v1.2.0",
+      "createdAt": "2024-08-21T09:20:00Z",
+      "closedAt": "2024-08-23T14:00:00Z"
+    },
+    {
+      "id": 28,
+      "number": 128,
+      "title": "Reduce initial app bundle size by removing unused assets",
+      "body": "Unused icons and placeholder assets are bloating startup time and app size.",
+      "state": "open",
+      "userName": "barovinh",
+      "userAvatar": "https://avatars.githubusercontent.com/u/112720108?v=4",
+      "labels": [
+        { "name": "performance", "color": "#f9d0c4" },
+        { "name": "optimization", "color": "#d4c5f9" }
+      ],
+      "commentsCount": 4,
+      "assignees": ["barovinh"],
+      "milestone": "v1.3.0",
+      "createdAt": "2024-08-21T13:10:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 29,
+      "number": 129,
+      "title": "Add archive and restore flow for completed tasks",
+      "body": "Users want a way to archive older completed tasks while keeping the active list focused.",
+      "state": "open",
+      "userName": "nguyenvana",
+      "userAvatar": "https://avatars.githubusercontent.com/u/1?v=4",
+      "labels": [
+        { "name": "feature", "color": "#0075ca" },
+        { "name": "enhancement", "color": "#a2eeef" }
+      ],
+      "commentsCount": 5,
+      "assignees": ["nguyenvana", "lehongc"],
+      "milestone": "v1.4.1",
+      "createdAt": "2024-08-22T07:00:00Z",
+      "closedAt": null
+    },
+    {
+      "id": 30,
+      "number": 130,
+      "title": "Add secure storage for user preferences",
+      "body": "Sensitive app settings and saved user choices should be stored using secure storage instead of plain shared preferences.",
+      "state": "open",
+      "userName": "tranthib",
+      "userAvatar": "https://avatars.githubusercontent.com/u/2?v=4",
+      "labels": [
+        { "name": "security", "color": "#b60205" },
+        { "name": "enhancement", "color": "#a2eeef" }
+      ],
+      "commentsCount": 7,
+      "assignees": ["tranthib"],
+      "milestone": "v1.5.0",
+      "createdAt": "2024-08-22T15:30:00Z",
+      "closedAt": null
+    }
+  ]
+}

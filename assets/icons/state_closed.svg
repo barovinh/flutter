@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <!-- Filled circle background -->
+  <circle cx="12" cy="12" r="10" fill="#FF6584" opacity="0.15"/>
+  <circle cx="12" cy="12" r="10" stroke="#FF6584" stroke-width="2"/>
+  <!-- X mark -->
+  <path d="M8.5 8.5 L15.5 15.5" stroke="#FF6584" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M15.5 8.5 L8.5 15.5" stroke="#FF6584" stroke-width="2.2" stroke-linecap="round"/>
+</svg>
