@@ -28,6 +28,11 @@ class _HeaderTaskState extends State<HeaderTask> {
               const PopupMenuItem(value: 'All', child: Text('All')),
               const PopupMenuItem(value: 'Open', child: Text('Open')),
               const PopupMenuItem(value: 'Closed', child: Text('Closed')),
+              const PopupMenuItem(
+                value: 'In Progress',
+                child: Text('In Progress'),
+              ),
+              const PopupMenuItem(value: 'Resolved', child: Text('Resolved')),
             ],
             child: Row(
               children: [

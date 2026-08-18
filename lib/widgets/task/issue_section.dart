@@ -88,24 +88,31 @@ class _TaskSectionState extends State<TaskSection> {
       );
     }
 
-    return ListView.builder(
-      controller: _scrollController,
-      padding: const EdgeInsets.symmetric(vertical: 8),
-      itemCount: _hasMore ? _issues.length + 1 : _issues.length,
-      itemBuilder: (BuildContext context, int index) {
-        if (index == _issues.length) {
-          return const Padding(
-            padding: EdgeInsets.all(16),
-            child: Center(child: CircularProgressIndicator()),
-          );
-        }
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        final int crossAxisCount = constraints.maxWidth >= 600 ? 2 : 1;
 
-        final Issue issue = _issues[index];
-        return IssueItem(
-          id: issue.id,
-          state: issue.state,
-          title: issue.title,
-          userName: issue.userName,
+        return GridView.builder(
+          controller: _scrollController,
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: crossAxisCount,
+            mainAxisExtent: 105,
+          ),
+          itemCount: _hasMore ? _issues.length + 1 : _issues.length,
+          itemBuilder: (BuildContext context, int index) {
+            if (index == _issues.length) {
+              return const Center(child: CircularProgressIndicator());
+            }
+
+            final Issue issue = _issues[index];
+            return IssueItem(
+              id: issue.id,
+              state: issue.state,
+              title: issue.title,
+              userName: issue.userName,
+            );
+          },
         );
       },
     );
