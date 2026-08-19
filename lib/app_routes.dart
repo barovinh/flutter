@@ -1,4 +1,5 @@
 class AppRoutes {
-  static const home = '/task';
+  static const task = '/task';
   static const profile = '/profile';
+  static const editProfile = '/edit-profile';
 }

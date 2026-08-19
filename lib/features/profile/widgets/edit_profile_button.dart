@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:todo_training/app_routes.dart';
 import 'package:todo_training/constants/colors.dart';
 
 class EditProfileButton extends StatelessWidget {
@@ -12,7 +14,7 @@ class EditProfileButton extends StatelessWidget {
         children: [
           Expanded(
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.toNamed(AppRoutes.editProfile),
               style: ElevatedButton.styleFrom(
                 backgroundColor: kBgCard,
                 foregroundColor: Colors.white,

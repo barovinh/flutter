@@ -13,7 +13,7 @@ class ProfileController extends GetxController {
 
   Future<void> loadProfile() async {
     isLoading.value = true;
-    await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 1));
     final user = User();
     await user.initData();
     userInfo.value = user;
