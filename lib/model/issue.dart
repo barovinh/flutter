@@ -68,7 +68,6 @@ class Issue {
     final Map<String, dynamic> data = jsonDecode(raw);
 
     final List<dynamic> list = data['issues'] as List;
-    print('data debug: $list');
     return list
         .map((item) => Issue.fromJson(item as Map<String, dynamic>))
         .toList();

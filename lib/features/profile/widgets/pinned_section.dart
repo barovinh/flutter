@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_training/constants/colors.dart';
 
 class PinnedSection extends StatelessWidget {
   const PinnedSection({super.key});
@@ -11,19 +12,31 @@ class PinnedSection extends StatelessWidget {
         children: [
           ListTile(
             leading: const Icon(Icons.push_pin, color: Colors.white70),
-            title: const Text('Pinned', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
-            trailing: const Text('Customize your pins', style: TextStyle(color: Colors.blue)),
+            title: const Text(
+              'Pinned',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            trailing: const Text(
+              'Customize your pins',
+              style: TextStyle(color: Colors.blue),
+            ),
           ),
           PinnedCard(
             repoName: 'A211-open-source-group-1/light-studio',
-            description: 'Open Source Programming Final Project - Group 6 - 12DHTH03',
+            description:
+                'Open Source Programming Final Project - Group 6 - 12DHTH03',
             language: 'JavaScript',
             languageColor: Colors.yellow,
             stars: '3',
             forks: '2',
           ),
           PinnedCard(
-            repoName: 'caro-game-but-pay-to-win-java/caro-game-but-pay-to-win-java',
+            repoName:
+                'caro-game-but-pay-to-win-java/caro-game-but-pay-to-win-java',
             description: 'Java Programming Final Project - Group 17 - 12DHTH18',
             language: 'Java',
             languageColor: Colors.orange,
@@ -32,7 +45,8 @@ class PinnedSection extends StatelessWidget {
           ),
           PinnedCard(
             repoName: 'the-woodpeckers-org/code-playground',
-            description: 'A web-based platform for real-time code writing, execution. Support C/C++, Python, Php, JavaScript(Node), ect...',
+            description:
+                'A web-based platform for real-time code writing, execution. Support C/C++, Python, Php, JavaScript(Node), ect...',
             language: 'JavaScript',
             languageColor: Colors.yellow,
             stars: '6',
@@ -65,6 +79,7 @@ class PinnedCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: kBgCard,
       child: Column(
         children: [
           ListTile(
@@ -73,18 +88,30 @@ class PinnedCard extends StatelessWidget {
               children: [
                 const Icon(Icons.public, size: 18),
                 const SizedBox(width: 8),
-                Expanded(child: Text(repoName, softWrap: true, style: const TextStyle(color: Colors.blue))),
+                Expanded(
+                  child: Text(
+                    repoName,
+                    softWrap: true,
+                    style: const TextStyle(color: Colors.blue),
+                  ),
+                ),
               ],
             ),
             subtitle: Wrap(
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8,
+                    vertical: 2,
+                  ),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.yellow),
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: const Text('Public archive', style: TextStyle(color: Colors.yellow, fontSize: 12)),
+                  child: const Text(
+                    'Public archive',
+                    style: TextStyle(color: Colors.yellow, fontSize: 12),
+                  ),
                 ),
               ],
             ),
@@ -102,7 +129,13 @@ class PinnedCard extends StatelessWidget {
                   children: [
                     Icon(Icons.circle, color: languageColor, size: 13),
                     const SizedBox(width: 2),
-                    Text(language, style: const TextStyle(color: Colors.white70, fontSize: 13)),
+                    Text(
+                      language,
+                      style: const TextStyle(
+                        color: Colors.white70,
+                        fontSize: 13,
+                      ),
+                    ),
                     const SizedBox(width: 4),
                     const Icon(Icons.star_border, size: 13),
                     Text(stars),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../constants/colors.dart';
-import 'profile/tab_item.dart';
 
 class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String currentPage;
@@ -105,7 +104,7 @@ class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ],
       ),
-      title: const Text('Baro Vinh'),
+      title: const Text('Baro Vinh', style: TextStyle(color: Colors.white)),
       actions: [
         PopupMenuButton<String>(
           icon: const Icon(Icons.more_vert, color: Colors.white70),

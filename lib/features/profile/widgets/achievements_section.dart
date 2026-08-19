@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../constants/colors.dart';
+import 'package:todo_training/constants/colors.dart';
 
 class AchievementsSection extends StatelessWidget {
   const AchievementsSection({super.key});

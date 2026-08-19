@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../constants/colors.dart';
+import 'package:todo_training/constants/colors.dart';
 
 class StatsSection extends StatelessWidget {
   const StatsSection({super.key});

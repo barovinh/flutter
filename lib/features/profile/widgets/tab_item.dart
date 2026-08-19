@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../constants/colors.dart';
+import 'package:todo_training/constants/colors.dart';
 
 class TabItem extends StatelessWidget {
   final String label;

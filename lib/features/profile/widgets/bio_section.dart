@@ -9,7 +9,7 @@ class BioSection extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(16, 20, 16, 20),
       child: Text(
         'Sinh viên IT - Công Thương TP.HCM aka HUIT',
-        style: TextStyle(fontSize: 22),
+        style: TextStyle(fontSize: 22, color: Colors.white),
       ),
     );
   }

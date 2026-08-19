@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'app_routes.dart';
+import 'app_pages.dart';
 import 'constants/colors.dart';
-import 'pages/home_page.dart';
-import 'pages/task_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Todo Training',
-      debugShowCheckedModeBanner: false,
+    return GetMaterialApp(
+      color: kBgDark,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: kPurple,
@@ -19,11 +19,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Roboto',
       ),
-      initialRoute: '/profile',
-      routes: {
-        '/profile': (context) => const MyHomePage(),
-        '/task': (context) => const TaskPage(),
-      },
+      initialRoute: AppRoutes.profile,
+      getPages: AppPages.pages,
     );
   }
 }
