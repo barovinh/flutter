@@ -1,11 +1,11 @@
 import 'package:get/get.dart';
 import 'package:todo_training/app_routes.dart';
 import 'package:todo_training/features/profile/profile_binding.dart';
+import 'package:todo_training/features/profile/profile_controller.dart';
 import 'package:todo_training/features/profile/profile_page.dart';
 import 'package:todo_training/features/task/task_binding.dart';
 import 'package:todo_training/features/task/task_page.dart';
-import 'package:todo_training/pages/edit_profile/bindings/edit_profile_binding.dart';
-import 'package:todo_training/pages/edit_profile/views/edit_profile_view.dart';
+import 'package:todo_training/features/edit-profile/views/edit_profile_page.dart';
 
 class AppPages {
   static final pages = [
@@ -23,8 +23,8 @@ class AppPages {
 
     GetPage(
       name: AppRoutes.editProfile,
-      page: () => EditProfileView(),
-      binding: EditProfileBinding(),
+      page: () => EditProfilePage(),
+      binding: ProfileBinding(),
     ),
   ];
 }

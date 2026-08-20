@@ -2,7 +2,6 @@ class User {
   String username = '';
   String email = '';
   String avatar = '';
-
   User() {}
 
   User.empty();

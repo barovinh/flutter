@@ -37,24 +37,26 @@ class ProfileHeader extends StatelessWidget {
                   backgroundImage: AssetImage('assets/icons/avt_barovinh.jpg'),
                 ),
                 const SizedBox(width: 14),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      user?.username ?? '',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        user?.username ?? '',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    SizedBox(height: 4),
-                    Text(
-                      user?.email ?? '',
-                      style: TextStyle(color: Colors.white54, fontSize: 14),
-                    ),
-                  ],
+                      SizedBox(height: 4),
+                      Text(
+                        user?.email ?? '',
+                        style: TextStyle(color: Colors.white54, fontSize: 14),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
