@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todo_training/model/issue.dart';
-import 'package:todo_training/widgets/task/issue_item.dart';
+import 'package:todo_training/features/issue/widgets/issue_item.dart';
 import 'package:todo_training/features/issue/issue_controller.dart';
 
-class TaskSection extends StatefulWidget {
-  const TaskSection({super.key});
+class IssueSection extends StatefulWidget {
+  const IssueSection({super.key});
 
   @override
-  State<TaskSection> createState() => _TaskSectionState();
+  State<IssueSection> createState() => _IssueSectionState();
 }
 
-class _TaskSectionState extends State<TaskSection> {
+class _IssueSectionState extends State<IssueSection> {
   final ScrollController _scrollController = ScrollController();
   IssueController get _ctrl => IssueController.to;
 
@@ -51,7 +51,7 @@ class _TaskSectionState extends State<TaskSection> {
       if (issues.isEmpty) {
         return const Center(
           child: Text(
-            'Không có task nào',
+            'Không có issue nào',
             style: TextStyle(color: Colors.white54),
           ),
         );

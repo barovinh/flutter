@@ -1,10 +1,9 @@
 import 'package:get/get.dart';
 import 'package:todo_training/app_routes.dart';
 import 'package:todo_training/features/profile/profile_binding.dart';
-import 'package:todo_training/features/profile/profile_controller.dart';
 import 'package:todo_training/features/profile/profile_page.dart';
-import 'package:todo_training/features/task/task_binding.dart';
-import 'package:todo_training/features/task/task_page.dart';
+import 'package:todo_training/features/issue/issue_binding.dart';
+import 'package:todo_training/features/issue/issue_page.dart';
 import 'package:todo_training/features/edit-profile/views/edit_profile_page.dart';
 
 class AppPages {
@@ -16,9 +15,9 @@ class AppPages {
     ),
 
     GetPage(
-      name: AppRoutes.task,
-      page: () => TaskPage(),
-      binding: TaskBinding(),
+      name: AppRoutes.issues,
+      page: () => IssuePage(),
+      binding: IssueBinding(),
     ),
 
     GetPage(
@@ -28,3 +27,4 @@ class AppPages {
     ),
   ];
 }
+

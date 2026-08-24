@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todo_training/features/issue/issue_controller.dart';
 
-class HeaderTask extends StatefulWidget {
-  const HeaderTask({super.key});
+class HeaderIssue extends StatefulWidget {
+  const HeaderIssue({super.key});
 
   @override
-  State<HeaderTask> createState() => _HeaderTaskState();
+  State<HeaderIssue> createState() => _HeaderIssueState();
 }
 
-class _HeaderTaskState extends State<HeaderTask> {
+class _HeaderIssueState extends State<HeaderIssue> {
   String _selectedFilter1 = 'All';
   String _selectedFilter2 = 'Create by me';
 

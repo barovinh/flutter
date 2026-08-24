@@ -29,8 +29,8 @@ class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
             onSelected: (value) {
               if (value == 'profile' && currentPage != 'profile') {
                 Navigator.pushReplacementNamed(context, '/profile');
-              } else if (value == 'task' && currentPage != 'task') {
-                Navigator.pushReplacementNamed(context, '/task');
+              } else if (value == 'issues' && currentPage != 'issues') {
+                Navigator.pushReplacementNamed(context, '/issues');
               }
             },
             itemBuilder: (context) => [
@@ -65,25 +65,25 @@ class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ),
               ),
               PopupMenuItem(
-                value: 'task',
+                value: 'issues',
                 child: Row(
                   children: [
                     Icon(
                       Icons.task_alt_outlined,
-                      color: currentPage == 'task' ? kPurple : Colors.white70,
+                      color: currentPage == 'issues' ? kPurple : Colors.white70,
                       size: 20,
                     ),
                     const SizedBox(width: 12),
                     Text(
-                      'Task',
+                      'Issues',
                       style: TextStyle(
-                        color: currentPage == 'task' ? kPurple : Colors.white,
-                        fontWeight: currentPage == 'task'
+                        color: currentPage == 'issues' ? kPurple : Colors.white,
+                        fontWeight: currentPage == 'issues'
                             ? FontWeight.bold
                             : FontWeight.normal,
                       ),
                     ),
-                    if (currentPage == 'task') ...[
+                    if (currentPage == 'issues') ...[
                       const Spacer(),
                       const Icon(Icons.check, color: kPurple, size: 16),
                     ],
