@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:todo_training/constants/state.dart';
 import 'package:todo_training/model/issue.dart';
 
 class IssueController extends GetxController {
@@ -52,5 +53,17 @@ class IssueController extends GetxController {
     if (current >= allIssues.length) return;
     final next = allIssues.skip(current).take(pageSize).toList();
     visibleIssues.addAll(next);
+  }
+
+  void updateIssueState(int id, States newState) {
+    final int idx = allIssues.indexWhere((e) => e.id == id);
+    if (idx == -1) return;
+    final updated = allIssues[idx].copyWith(
+      state: newState,
+      closedAt: newState == States.resolved ? DateTime.now() : null,
+    );
+    allIssues[idx] = updated;
+    final int vIdx = visibleIssues.indexWhere((e) => e.id == id);
+    if (vIdx != -1) visibleIssues[vIdx] = updated;
   }
 }

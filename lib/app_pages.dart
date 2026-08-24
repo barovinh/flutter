@@ -4,6 +4,9 @@ import 'package:todo_training/features/profile/profile_binding.dart';
 import 'package:todo_training/features/profile/profile_page.dart';
 import 'package:todo_training/features/issue/issue_binding.dart';
 import 'package:todo_training/features/issue/issue_page.dart';
+import 'package:todo_training/features/issue/issue_detail_page.dart';
+import 'package:todo_training/features/issue/issue_detail_binding.dart';
+
 import 'package:todo_training/features/edit-profile/views/edit_profile_page.dart';
 
 class AppPages {
@@ -25,6 +28,10 @@ class AppPages {
       page: () => EditProfilePage(),
       binding: ProfileBinding(),
     ),
+    GetPage(
+      name: AppRoutes.issueDetail,
+      page: () => IssueDetailPage(),
+      binding: IssueDetailBinding(),
+    ),
   ];
 }
-

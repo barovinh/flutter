@@ -72,6 +72,24 @@ class Issue {
         .map((item) => Issue.fromJson(item as Map<String, dynamic>))
         .toList();
   }
+
+  Issue copyWith({States? state, DateTime? closedAt}) {
+    return Issue(
+      id: id,
+      number: number,
+      title: title,
+      body: body,
+      state: state ?? this.state,
+      userAvatar: userAvatar,
+      userName: userName,
+      labels: labels,
+      commentsCount: commentsCount,
+      createdAt: createdAt,
+      closedAt: closedAt ?? this.closedAt,
+      assignees: assignees,
+      milestone: milestone,
+    );
+  }
 }
 
 class Label {
