@@ -30,6 +30,7 @@ class _HeaderIssueState extends State<HeaderIssue> {
                   setState(() {
                     _selectedFilter1 = value;
                   });
+                  IssueController.to.statusFilter = value;
                 },
                 itemBuilder: (context) => [
                   const PopupMenuItem(value: 'All', child: Text('All')),
@@ -63,6 +64,7 @@ class _HeaderIssueState extends State<HeaderIssue> {
                   setState(() {
                     _selectedFilter2 = value;
                   });
+                  IssueController.to.ownerFilter = value;
                 },
                 itemBuilder: (context) => [
                   const PopupMenuItem(
@@ -117,7 +119,7 @@ class _SearchBarAppState extends State<SearchBarApp> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 200,
+      width: double.maxFinite,
       height: 40,
       child: SearchBar(
         controller: _controller,

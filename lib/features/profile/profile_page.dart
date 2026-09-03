@@ -13,9 +13,9 @@ import 'package:todo_training/features/profile/widgets/status_card.dart';
 
 import 'profile_controller.dart';
 
-class ProfilePage extends GetView<ProfileController> {
-  const ProfilePage({super.key});
-
+class ProfilePage extends StatelessWidget {
+  ProfilePage({super.key});
+  final controller = Get.find<ProfileController>();
   @override
   Widget build(BuildContext context) {
     if (!Get.isRegistered<ProfileController>()) {

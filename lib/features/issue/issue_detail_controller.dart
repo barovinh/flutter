@@ -9,7 +9,6 @@ class IssueDetailController extends GetxController {
   late final Rx<Issue> issue;
   @override
   void onInit() {
-    // TODO: implement onInit
     super.onInit();
 
     final id = Get.arguments as int;

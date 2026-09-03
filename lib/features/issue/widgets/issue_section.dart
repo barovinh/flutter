@@ -62,7 +62,7 @@ class _IssueSectionState extends State<IssueSection> {
           final int crossAxisCount = constraints.maxWidth >= 600 ? 2 : 1;
 
           final bool canLoadMore =
-              _ctrl.query.isEmpty &&
+              _ctrl.isFilter() &&
               _ctrl.visibleIssues.length < _ctrl.allIssues.length;
 
           return GridView.builder(

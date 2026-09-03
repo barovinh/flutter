@@ -82,8 +82,6 @@ class IssueItem extends StatelessWidget {
         );
       case States.closed:
         return buildStateSvg('assets/icons/state_closed.svg', kPink);
-      default:
-        return buildStateSvg('assets/icons/state_open.svg', Colors.white38);
     }
   }
 

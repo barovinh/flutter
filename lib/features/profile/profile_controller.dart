@@ -24,9 +24,9 @@ class ProfileController extends GetxController {
     userInfo.value = user;
     isLoading.value = false;
 
-    nameController.text = user.username ?? '';
-    emailController.text = user.email ?? '';
-    avatarController.text = user.avatar ?? '';
+    nameController.text = user.username;
+    emailController.text = user.email;
+    avatarController.text = user.avatar;
   }
 
   Future<void> updateProfile() async {
