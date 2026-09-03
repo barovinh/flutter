@@ -8,6 +8,7 @@ import 'package:todo_training/features/issue/issue_detail_page.dart';
 import 'package:todo_training/features/issue/issue_detail_binding.dart';
 
 import 'package:todo_training/features/edit-profile/views/edit_profile_page.dart';
+import 'package:todo_training/features/to-do/widgets/todo_page.dart';
 
 class AppPages {
   static final pages = [
@@ -33,5 +34,7 @@ class AppPages {
       page: () => IssueDetailPage(),
       binding: IssueDetailBinding(),
     ),
+
+    GetPage(name: AppRoutes.todo, page: () => TodoPage()),
   ];
 }

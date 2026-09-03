@@ -31,6 +31,8 @@ class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
                 Navigator.pushReplacementNamed(context, '/profile');
               } else if (value == 'issues' && currentPage != 'issues') {
                 Navigator.pushReplacementNamed(context, '/issues');
+              } else if (value == 'todo' && currentPage != 'todo') {
+                Navigator.popAndPushNamed(context, '/to-do');
               }
             },
             itemBuilder: (context) => [
@@ -86,6 +88,32 @@ class SharedAppBar extends StatelessWidget implements PreferredSizeWidget {
                     if (currentPage == 'issues') ...[
                       const Spacer(),
                       const Icon(Icons.check, color: kPurple, size: 16),
+                    ],
+                  ],
+                ),
+              ),
+              PopupMenuItem(
+                value: 'todo',
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.list,
+                      color: currentPage == 'todo' ? kPurple : Colors.white70,
+                      size: 20,
+                    ),
+                    const SizedBox(width: 12),
+                    Text(
+                      'Todo',
+                      style: TextStyle(
+                        color: currentPage == 'todo' ? kPurple : Colors.white,
+                        fontWeight: currentPage == 'todo'
+                            ? FontWeight.bold
+                            : FontWeight.normal,
+                      ),
+                    ),
+                    if (currentPage == 'todo') ...[
+                      const Spacer(),
+                      const Icon(Icons.list, color: kPurple, size: 16),
                     ],
                   ],
                 ),

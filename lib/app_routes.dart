@@ -3,4 +3,5 @@ class AppRoutes {
   static const profile = '/profile';
   static const editProfile = '/edit-profile';
   static const issueDetail = '/issue-detail';
+  static const todo = '/to-do';
 }
